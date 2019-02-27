@@ -7,6 +7,7 @@ pipeline {
   }
   environment {
     DEPLOY_NAMESPACE = "jx-staging"
+    TILLER_NAMESPACE = "kube-system"
   }
   stages {
     stage('Validate Environment') {
